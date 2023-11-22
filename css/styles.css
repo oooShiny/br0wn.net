@@ -1,0 +1,163 @@
+
+body {
+    font-family: Verdana, sans-serif;
+    background-color: #fafafa;
+}
+
+h1 {
+    font-size: 3em;
+}
+p {
+    font-size: 1.2em;
+}
+
+.card, .card-wide {
+    background: white;
+    -webkit-box-shadow: 0px 0px 42px 10px rgba(0,0,0,0.42);
+    -moz-box-shadow: 0px 0px 42px 10px rgba(0,0,0,0.42);
+    box-shadow: 0px 0px 42px 10px rgba(0,0,0,0.12);
+}
+
+.card-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 1em;
+}
+.card-title {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.card p {
+    font-size: 1em;
+}
+.grey {
+    background: #eaeaea;
+}
+
+
+/*
+    Accordion css
+*/
+.tab {
+    position: relative;
+    margin-bottom: 1px;
+    width: 100%;
+    overflow: hidden;
+    border-bottom: 1px solid grey;
+}
+.tab input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+.tab label {
+    position: relative;
+    display: block;
+    padding: 0 0 0 1em;
+    font-weight: bold;
+    line-height: 3;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+.tab-content {
+    max-height: 0;
+    overflow: hidden;
+    -webkit-transition: max-height .35s;
+    -o-transition: max-height .35s;
+    transition: max-height .35s;
+}
+.tab-content p {
+    margin: 1em;
+    font-size: 1em;
+}
+/* :checked */
+input:checked ~ .tab-content {
+    max-height: 20em;
+    overflow: auto;
+}
+/* Icon */
+.tab label::after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    width: 3em;
+    height: 3em;
+    line-height: 3;
+    text-align: center;
+    -webkit-transition: all .35s;
+    -o-transition: all .35s;
+    transition: all .35s;
+}
+input[type=checkbox] + label::after {
+    content: "+";
+}
+input[type=radio] + label::after {
+    content: "\25BC";
+}
+input[type=checkbox]:checked + label::after {
+    transform: rotate(315deg);
+}
+input[type=radio]:checked + label::after {
+    transform: rotateX(180deg);
+}
+
+/*
+    Form Styles
+ */
+input[type=text] {
+    width: 100%;
+    padding: 1em;
+    margin: 1em 0;
+    box-sizing: border-box;
+    border: 1px solid grey;
+}
+
+textarea {
+    width: 100%;
+    height: 5em;
+    padding: 1em;
+    margin: 1em 0;
+    box-sizing: border-box;
+    border: 1px solid grey;
+    resize: none;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+    border: none;
+    padding: 1em;
+    text-decoration: none;
+    margin: 1em 0;
+    border: 1px solid grey;
+    cursor: pointer;
+}
+
+.tags ul {
+    display: flex;
+    gap: 1em;
+    list-style: none;
+    padding-left: 0;
+}
+
+.tags ul li {
+    background: gray;
+    color: white;
+    padding: 0.25em 0.5em;
+    border-radius: 1em;
+}
+
+li.tag-link a {
+    color: white;
+    text-decoration: none;
+}
+li.tag-link {
+    background-color: blue !important;
+}

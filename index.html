@@ -1,0 +1,244 @@
+<html lang="en">
+<head>
+    <link href="/css/layout.css" type="text/css" rel="stylesheet">
+    <link href="/css/styles.css" type="text/css" rel="stylesheet">
+    <title>Andrew Brown, Developer</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.gif">
+    <script defer data-domain="br0wn.net" src="https://plausible.io/js/script.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="wrapper">
+        <div class="header" style="background-color: rgb(234, 234, 234);">
+            <h1>Andrew</h1>
+            <img src="/images/ab-logo.png" alt="AB logo">
+            <h1>Brown</h1>
+        </div>
+        <div class="page-content">
+            <div class="row center">
+    <p>I built this website, because that's what I do. Here's some other websites I've built for myself.</p>
+</div>
+<div class="row center grey">
+    <h2>Websites I've Built</h2>
+    <p>
+        I like to build sports websites, specifically about the NFL and the New England Patriots. Here are some of my favorites.
+    </p>
+</div>
+<div class="row center grey">
+    <div class="card-wide">
+
+        <div class="card-content">
+            <span class="card-title"><a href="https://patsdynasty.com/" target="_blank">Patriots Dynasty</a></span>
+            <p>
+                I came across an infographic that showed how the Patriots didn't have a losing record against any team in the NFL
+                since Bill Belichick became head coach of the team. I created a sortable, filterable version of that infographic
+                using the <a href="https://isotope.metafizzy.co/" target="_blank">Isotope JS library</a>. Since this was a living document now, I wanted to
+                replicate it in an updatable way, so I decided to create a site using <a href="https://getgrav.org" target="_blank">Grav</a> as the CMS.
+            </p>
+            <p>
+                This has since grown into a fully-featured Drupal 9 site that utilizes the Search API to connect to a separate
+                Solr server, the JSON API to export data, and a custom-built Tailwind theme. The site continues to grow, and a
+                podcast has spun out of this endeavor.
+            </p>
+            <div class="tags">
+                <ul>
+                    <li class="tag-link"><a href="https://patsdynasty.com/" target="_blank">Website</a></li>
+                    <li class="tag-link"><a href="https://github.com/oooShiny/dynasty9" target="_blank">Github</a></li>
+                    <li>Drupal</li>
+                    <li>Tailwind</li>
+                    <li>Solr</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="card-wide">
+
+        <div class="card-content">
+            <span class="card-title"><a href="https://tombradytds.com/" target="_blank">Tom Brady TDs</a></span>
+            <p>
+                I wanted to visualize all 700+ touchdowns that quarterback Tom Brady has thrown in his 20+ year career. I had all
+                of his Patriots TDs logged in my patsdynasty.com website, so I was able to export that data, but he has since moved
+                to another team. I created a second JSON file of Brady's TDs with his new team, and pulled the combined data into a
+                separate site that charts all of his TDs in a variety of different views.
+            </p>
+            <div class="tags">
+                <ul>
+                    <li class="tag-link"><a href="https://tombradytds.com/" target="_blank">Website</a></li>
+                    <li class="tag-link"><a href="https://github.com/oooShiny/tombradytds" target="_blank">Github</a></li>
+                    <li>PHP</li>
+                    <li>Charting</li>
+                    <li>Javascript</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="card-wide">
+
+        <div class="card-content">
+            <span class="card-title"><a href="http://infographic.qbtds.com/" target="_blank">QBTDs</a></span>
+            <p>
+                Inspired by the tombradytds.com site, I wanted to create an infographic of every receiver to whom Tom Brady had ever
+                thrown a TD pass. This led to the infographic builder, which takes specifically-named image files of each receiver
+                and sorts/resizes them by percentage of TDs caught. I used this to create the
+                <a href="https://twitter.com/PatsDynastyInfo/status/1620801935174688776" target="_blank">viral infographic</a> as well
+                as many other infographics for other QBs.
+            </p>
+            <div class="tags">
+                <ul>
+                    <li class="tag-link"><a href="http://infographic.qbtds.com/" target="_blank">Website</a></li>
+                    <li class="tag-link"><a href="https://github.com/oooShiny/qb-infographics" target="_blank">Github</a></li>
+                    <li>PHP</li>
+                    <li>Algorithms</li>
+                    <li>File Manipulation</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="card-wide">
+
+        <div class="card-content">
+            <span class="card-title"><a href="https://32-teams.com" target="_blank">NFL News Generator</a></span>
+            <p>
+                I wanted to learn how to use the canvas in Javascript to build images, so I built a small website that allows users to
+                fill in some form fields to create a realistic looking image similar to the ones that the NFL uses in their social
+                media posts.
+            </p>
+            <div class="tags">
+                <ul>
+                    <li class="tag-link"><a href="https://32-teams.com" target="_blank">Website</a></li>
+                    <li class="tag-link"><a href="https://github.com/oooShiny/nfl-news-generator" target="_blank">Github</a></li>
+                    <li>Javascript</li>
+                    <li>Canvas</li>
+                    <li>Dynamic Image Creation</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row center">
+    <h2>Resume</h2>
+    <p>And here are some places I've worked, most of which have let me build websites (since that's what I do).</p>
+    <div class="wrapper">
+        <div class="tab">
+            <input id="tab-Mindgrub" type="checkbox">
+            <label for="tab-Mindgrub">Mindgrub</label>
+            <div class="tab-content">
+                <p>
+                    My current employer. I'm working on new builds and site migrations of Drupal sites at the moment.
+                </p>
+            </div>
+        </div>
+        <div class="tab">
+            <input id="tab-Pegasystems" type="checkbox">
+            <label for="tab-Pegasystems">Pegasystems</label>
+            <div class="tab-content">
+                <p>
+                    I was generally responsible for working on the Pegasystems family of websites. I started on the Community website, and ended up as the
+                    deployment manager while also mentoring multiple new developers on the team.
+                </p>
+                <p>
+                    I was then rotated onto the internal company Portal website, where I worked with stakeholders to simplify author workflows and personalize
+                    content based on user locations and roles.
+                </p>
+            </div>
+        </div>
+        <div class="tab">
+            <input id="tab-Genuine" type="checkbox">
+            <label for="tab-Genuine">Genuine</label>
+            <div class="tab-content">
+                <p>
+                    I started at Genuine Interactive as a Junior Web Application Developer on the PHP team. In that role, I worked mainly on Drupal maintenance projects for a lot of Boston-based and international companies.
+                </p>
+                <p>
+                    My largest project was adding Japanese and Chinese translations to one of five sites that was maintained using the Domain Access module to share content between them all. I managed to teach myself Drupal translation management as well as the intricacies of Domain Access (I had used neither before) and completed the project on time and within the budget. Unfortunately, due to outside circumstances, the project didn't launch.
+                </p>
+                <p>
+                    From there I transitioned to the team responsible for the Johnson and Johnson platform that is being rolled out to all of their brands. Here I've learned true scrum practices, as well as module development. I was fortunate enough to be the only junior developer on the project, but since starting this work I have graduated out of the junior role and into a Web Application Developer position.
+                </p>
+                <p>
+                    Eventually I was given my own projects to run, in which I learned how to estimate and architect a full website project from the ground up.
+                </p>
+            </div>
+        </div>
+        <div class="tab">
+            <input id="tab-Planet" type="checkbox">
+            <label for="tab-Planet">Planet Fitness</label>
+            <div class="tab-content">
+                <p>
+                    While at Planet Fitness I provided technical support for corporate employees, including both hardware and software support. I worked with suppliers to purchase new equipment and software licenses as needed. When needed, I also managed outside vendors on projects including the conversion of the company website from Coldfusion to Drupal.
+                </p>
+                <p>
+                    I started as a mid-level technical support specialist, and within about 6 months I was running the support department, with three employees reporting directly to me.
+                </p>
+            </div>
+        </div>
+        <div class="tab">
+            <input id="tab-AdminInternet" type="checkbox">
+            <label for="tab-AdminInternet">AdminInternet</label>
+            <div class="tab-content">
+                <p>
+                    At AdminInternet I wore many hats. As a developer/site builder I designed, deployed, and maintained websites using the Drupal framework, which was supplemented with PHP/MySQL custom code when necessary. These sites used a mix of Drupal 6 or Drupal 7 based on user needs, and I utilized drush when needed.
+                </p>
+                <p>
+                    I was also the "client-facing" developer who would interact with clients in any sales or support capacities. I was responsible for training incoming clients on all of the various offerings that AdminInternet provided. I created support documentation and often participated in screen-sharing sessions if a client needed more hands-on help.
+                </p>
+                <p>
+                    As a business manager I was in charge of billing and invoicing. The old system involved running custom SQL queries directly in a database to find work performed since the last billing took place. The billing entries were free-form, and had to be curated before any information could be sent to the client.
+                </p>
+                <p>
+                    I created a system from scratch using Drupal 7 that streamlined the old billing system. Because time tracking was simplified, work was tracked more efficiently and required less editing when the invoices were created. Instead of a process that originally took up to 6 hours, my new system condensed the entire process to under 30 minutes. This increased the frequency of billing from once ever 4 months to once a week, stabilizing the cashflow process.
+                </p>
+            </div>
+        </div>
+        <div class="tab">
+            <input id="tab-John" type="checkbox">
+            <label for="tab-John">John Mason Institute</label>
+            <div class="tab-content">
+                <p>
+                    I worked part-time at John Mason Institute where I taught classes in entry-level web development as well as classes for the Adobe Suite (Photoshop, Illustrator, Dreamweaver, etc.) to individuals looking for certifications.
+                </p>
+                <p>
+                    JMI works with the unemployment office to provide job-seekers with skills they can use to get themselves a job, so I was able to share my passion for technology with a wide variety of people from all walks of life.
+                </p>
+            </div>
+        </div>
+        <div class="tab">
+            <input id="tab-H" type="checkbox">
+            <label for="tab-H">H&amp;R Block</label>
+            <div class="tab-content">
+                <p>
+                    I worked seasonally at H&amp;R Block, where I provided on-site technical support for 20+ offices in NH and MA, including hardware, software and network support. My job was to keep the offices running smoothly for the tax professionals. Duties included setting up the offices at the beginning of the season (workstations, office networks, etc), providing on-location support to the offices once the season began, and then helping dismantle the office infrastructure once the season was over (after April 15th, as we all know!).
+                </p>
+            </div>
+        </div>
+        <div class="tab">
+            <input id="tab-University" type="checkbox">
+            <label for="tab-University">University of New Hampshire</label>
+            <div class="tab-content">
+                <p>
+                    While attending UNH (see the Education section), I worked in the campus computer clusters as a Computer Consultant. I provided guidance and assistance to students, faculty and staff for various computer-related issues (mainly involving printers!).
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row center grey">
+    <h2>Send Me a Message</h2>
+    <p>Want to talk about websites? Send me a message.</p>
+</div>
+<div class="row grey">
+    <form action="https://formspree.io/andrew@br0wn.net" method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Write something.."></textarea>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+        </div>
+        <div class="footer">
+            © 2018 Andrew Brown
+        </div>
+    </div>
+</div>
