@@ -148,8 +148,7 @@ input[type=button], input[type=submit], input[type=reset] {
 }
 
 .tags ul li {
-    background: gray;
-    color: white;
+    background: #eaeaea;
     padding: 0.25em 0.5em;
     border-radius: 1em;
 }
