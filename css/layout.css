@@ -12,14 +12,43 @@ body {
 }
 
 .header {
-    height: 10em;
     display: flex;
-    justify-content: center;
+}
+.header img {
+    height: 160px;
+    width: 160px;
 }
 
-.header h1 {
-    padding-top: 1em;
-    font-weight: 100;
+@media only screen and (min-width: 768px) {
+    .header {
+        height: 10em;
+        justify-content: center;
+    }
+    .header h1.desktop {
+        padding-top: 1em;
+        font-weight: 100;
+    }
+
+    .header h1.mobile {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .header {
+        flex-direction: column;
+    }
+    .header h1.desktop {
+        display: none;
+    }
+
+    .header h1.mobile {
+        font-weight: 100;
+        text-align: center;
+    }
+    .header img {
+        margin: 0 auto;
+    }
 }
 
 .navigation {
