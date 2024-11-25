@@ -161,3 +161,29 @@ li.tag-link a {
 li.tag-link {
     background-color: blue !important;
 }
+
+.laptop {
+    transform-origin: 0 0;
+    
+}
+@media (min-width: 768px) {
+    .laptop {
+        width: 2040px; 
+        height: 1440px; 
+        transform: scale(0.25);
+    }
+}
+@media (min-width: 768px) {
+    .laptop {
+        width: 1024px; 
+        height: 720px; 
+        transform: scale(0.3);
+    }
+}
+@media (min-width: 1024px) {
+    .laptop {
+        width: 2040px; 
+        height: 1440px; 
+        transform: scale(0.25);
+    }
+}

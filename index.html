@@ -2,24 +2,27 @@
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="/css/layout.css" type="text/css" rel="stylesheet">
-    <link href="/css/styles.css" type="text/css" rel="stylesheet">
+    <link href="css/layout.css" type="text/css" rel="stylesheet">
+    <link href="css/styles.css" type="text/css" rel="stylesheet">
+     <script src="https://cdn.tailwindcss.com"></script>
     <title>Andrew Brown, Developer</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.gif">
     <script defer data-domain="br0wn.net" src="https://plausible.io/js/script.js"></script>
     <meta name="description" content="Website for Andrew Brown, website developer.">
 </head>
 <body>
-<div class="container">
+<div>
     <div class="wrapper">
         <div class="header" style="background-color: rgb(234, 234, 234);">
             <h1 class="desktop">Andrew</h1>
-            <img src="/images/ab-logo.png" alt="AB logo">
+            <img src="images/ab-logo.png" alt="AB logo">
             <h1 class="desktop">Brown</h1>
             <h1 class="mobile">Andrew Brown</h1>
         </div>
         <div class="page-content">
-            <div class="row center">
+            
+
+<div class="row center">
     <p>
         I built this website, because that's what I do. I've spent my career 
         combining my love of technology with helping people. That started off 
@@ -43,9 +46,9 @@
         <a href="https://github.com/oooShiny/">Github</a>.
     </p>
 </div>
-<div class="row center grey">
-    <div class="card-wide">
-
+<div class="bg-gray-500 text-white">
+    
+    <div class="my-4 grid grid-cols-2">
         <div class="card-content">
             <span class="card-title"><a href="https://patsdynasty.com/" target="_blank">Patriots Dynasty</a></span>
             <p>
@@ -60,7 +63,7 @@
                 podcast has spun out of this endeavor.
             </p>
             <div class="tags">
-                <ul>
+                <ul class="text-gray-700">
                     <li class="tag-link"><a href="https://patsdynasty.com/" target="_blank">Website</a></li>
                     <li class="tag-link"><a href="https://github.com/oooShiny/dynasty9" target="_blank">Github</a></li>
                     <li>Drupal</li>
@@ -69,9 +72,41 @@
                 </ul>
             </div>
         </div>
+        <div class="computer my-auto">
+            <div
+                class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
+                <div class="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800">
+                    <div class="relative md:h-[720px] lg:h-[1440px] md:w-[1024px] lg:w-[2048px]">
+                        <iframe class="absolute laptop" src="https://patsdynasty.com" frameborder="0" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="relative mx-auto bg-gray-900 dark:bg-gray-700 rounded-b-xl rounded-t-sm h-[17px] max-w-[351px] md:h-[21px] md:max-w-[597px]">
+                <div
+                    class="absolute left-1/2 top-0 -translate-x-1/2 rounded-b-xl w-[56px] h-[5px] md:w-[96px] md:h-[8px] bg-gray-800">
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="card-wide">
 
+    <div class="my-4 grid grid-cols-2">
+        <div class="computer my-auto">
+            <div
+                class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
+                <div class="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800">
+                    <div class="relative md:h-[720px] lg:h-[1440px] md:w-[1024px] lg:w-[2048px]">
+                        <iframe class="absolute laptop" src="https://tombradytds.com/" frameborder="0" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="relative mx-auto bg-gray-900 dark:bg-gray-700 rounded-b-xl rounded-t-sm h-[17px] max-w-[351px] md:h-[21px] md:max-w-[597px]">
+                <div
+                    class="absolute left-1/2 top-0 -translate-x-1/2 rounded-b-xl w-[56px] h-[5px] md:w-[96px] md:h-[8px] bg-gray-800">
+                </div>
+            </div>
+        </div>
         <div class="card-content">
             <span class="card-title"><a href="https://tombradytds.com/" target="_blank">Tom Brady TDs</a></span>
             <p>
@@ -81,7 +116,7 @@
                 separate site that charts all of his TDs in a variety of different views.
             </p>
             <div class="tags">
-                <ul>
+                <ul class="text-gray-700">
                     <li class="tag-link"><a href="https://tombradytds.com/" target="_blank">Website</a></li>
                     <li class="tag-link"><a href="https://github.com/oooShiny/tombradytds" target="_blank">Github</a></li>
                     <li>PHP</li>
@@ -91,8 +126,8 @@
             </div>
         </div>
     </div>
-    <div class="card-wide">
-
+    
+    <div class="my-4 grid grid-cols-2">
         <div class="card-content">
             <span class="card-title"><a href="http://infographic.qbtds.com/" target="_blank">QBTDs</a></span>
             <p>
@@ -103,7 +138,7 @@
                 as many other infographics for other QBs.
             </p>
             <div class="tags">
-                <ul>
+                <ul class="text-gray-700">
                     <li class="tag-link"><a href="http://infographic.qbtds.com/" target="_blank">Website</a></li>
                     <li class="tag-link"><a href="https://github.com/oooShiny/qb-infographics" target="_blank">Github</a></li>
                     <li>PHP</li>
@@ -112,9 +147,41 @@
                 </ul>
             </div>
         </div>
+        <div class="computer my-auto">
+            <div
+                class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
+                <div class="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800">
+                    <div class="relative md:h-[720px] lg:h-[1440px] md:w-[1024px] lg:w-[2048px]">
+                        <iframe class="absolute laptop" src="https://infographic.qbtds.com/tom-brady/" frameborder="0" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="relative mx-auto bg-gray-900 dark:bg-gray-700 rounded-b-xl rounded-t-sm h-[17px] max-w-[351px] md:h-[21px] md:max-w-[597px]">
+                <div
+                    class="absolute left-1/2 top-0 -translate-x-1/2 rounded-b-xl w-[56px] h-[5px] md:w-[96px] md:h-[8px] bg-gray-800">
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="card-wide">
 
+    <div class="my-4 grid grid-cols-2">
+        <div class="computer my-auto">
+            <div
+                class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
+                <div class="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800">
+                    <div class="relative md:h-[720px] lg:h-[1440px] md:w-[1024px] lg:w-[2048px]">
+                        <iframe class="absolute laptop" src="https://32-teams.com" frameborder="0" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="relative mx-auto bg-gray-900 dark:bg-gray-700 rounded-b-xl rounded-t-sm h-[17px] max-w-[351px] md:h-[21px] md:max-w-[597px]">
+                <div
+                    class="absolute left-1/2 top-0 -translate-x-1/2 rounded-b-xl w-[56px] h-[5px] md:w-[96px] md:h-[8px] bg-gray-800">
+                </div>
+            </div>
+        </div>
         <div class="card-content">
             <span class="card-title"><a href="https://32-teams.com" target="_blank">NFL News Generator</a></span>
             <p>
@@ -123,13 +190,49 @@
                 media posts.
             </p>
             <div class="tags">
-                <ul>
+                <ul class="text-gray-700">
                     <li class="tag-link"><a href="https://32-teams.com" target="_blank">Website</a></li>
                     <li class="tag-link"><a href="https://github.com/oooShiny/nfl-news-generator" target="_blank">Github</a></li>
                     <li>Javascript</li>
                     <li>Canvas</li>
                     <li>Dynamic Image Creation</li>
                 </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="my-4 grid grid-cols-2">
+        <div class="card-content">
+            <span class="card-title"><a href="https://cityofchampions.boston/" target="_blank">City of Champions</a></span>
+            <p>
+                I wanted to learn how to use the canvas in Javascript to build images, so I built a small website that allows users to
+                fill in some form fields to create a realistic looking image similar to the ones that the NFL uses in their social
+                media posts.
+            </p>
+            <div class="tags">
+                <ul class="text-gray-700">
+                    <li class="tag-link"><a href="https://cityofchampions.boston/" target="_blank">Website</a></li>
+                    <!-- <li class="tag-link"><a href="https://github.com/oooShiny/nfl-news-generator" target="_blank">Github</a></li> -->
+                    <li>Javascript</li>
+                    <li>Canvas</li>
+                    <li>Dynamic Image Creation</li>
+                </ul>
+            </div>
+        </div>
+        <div class="computer my-auto">
+            <div
+                class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
+                <div class="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800">
+                    <div class="relative md:h-[720px] lg:h-[1440px] md:w-[1024px] lg:w-[2048px]">
+                        <iframe class="absolute laptop" src="https://cityofchampions.boston/" frameborder="0" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="relative mx-auto bg-gray-900 dark:bg-gray-700 rounded-b-xl rounded-t-sm h-[17px] max-w-[351px] md:h-[21px] md:max-w-[597px]">
+                <div
+                    class="absolute left-1/2 top-0 -translate-x-1/2 rounded-b-xl w-[56px] h-[5px] md:w-[96px] md:h-[8px] bg-gray-800">
+                </div>
             </div>
         </div>
     </div>
