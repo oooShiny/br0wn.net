@@ -11,6 +11,17 @@ p {
     font-size: 1.2em;
 }
 
+p a {
+    text-decoration-line: underline !important;
+    text-decoration-color: #3b82f6 !important;
+}
+
+.card-title a {
+    color: blue !important;
+    text-decoration-line: underline !important;
+    text-decoration-color: #3b82f6 !important;
+}
+
 .card, .card-wide {
     background: white;
     -webkit-box-shadow: 0px 0px 42px 10px rgba(0,0,0,0.42);
@@ -32,8 +43,9 @@ p {
     padding: 1em;
 }
 .card-title {
-    font-size: 1.2em;
+    font-size: 1.5em;
     font-weight: bold;
+    line-height: 2em;
 }
 .card p {
     font-size: 1em;
@@ -160,6 +172,9 @@ li.tag-link a {
 }
 li.tag-link {
     background-color: blue !important;
+}
+li.tag-link:hover {
+    background-color: rgb(147 197 253) !important;
 }
 
 .laptop {
