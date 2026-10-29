@@ -76,7 +76,7 @@
                 class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
                 <div class="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800">
                     <div class="relative md:h-[720px] lg:h-[1440px] md:w-[1024px] lg:w-[2048px]">
-                        <iframe class="absolute laptop" src="https://patsdynasty.com" frameborder="0" loading="lazy"></iframe>
+                        <iframe data-load="load" class="absolute laptop" data-src="https://patsdynasty.com" frameborder="0"></iframe>
                     </div>
                 </div>
             </div>
@@ -104,7 +104,7 @@
                 class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
                 <div class="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800">
                     <div class="relative md:h-[720px] lg:h-[1440px] md:w-[1024px] lg:w-[2048px]">
-                        <iframe class="absolute laptop" src="https://tombradytds.com/" frameborder="0" loading="lazy"></iframe>
+                        <iframe class="absolute laptop" data-src="https://tombradytds.com/" frameborder="0"></iframe>
                     </div>
                 </div>
             </div>
@@ -151,7 +151,7 @@
                 class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
                 <div class="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800">
                     <div class="relative md:h-[720px] lg:h-[1440px] md:w-[1024px] lg:w-[2048px]">
-                        <iframe class="absolute laptop" src="https://infographic.qbtds.com/tom-brady/" frameborder="0" loading="lazy"></iframe>
+                        <iframe class="absolute laptop" data-src="https://infographic.qbtds.com/tom-brady/" frameborder="0"></iframe>
                     </div>
                 </div>
             </div>
@@ -179,7 +179,7 @@
                 class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
                 <div class="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800">
                     <div class="relative md:h-[720px] lg:h-[1440px] md:w-[1024px] lg:w-[2048px]">
-                        <iframe class="absolute laptop" src="https://32-teams.com" frameborder="0" loading="lazy"></iframe>
+                        <iframe class="absolute laptop" data-src="https://32-teams.com" frameborder="0"></iframe>
                     </div>
                 </div>
             </div>
@@ -224,7 +224,7 @@
                 class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
                 <div class="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800">
                     <div class="relative md:h-[720px] lg:h-[1440px] md:w-[1024px] lg:w-[2048px]">
-                        <iframe class="absolute laptop" src="https://oooshiny.github.io/cityofchampions.boston/" frameborder="0" loading="lazy"></iframe>
+                        <iframe class="absolute laptop" data-src="https://oooshiny.github.io/cityofchampions.boston/" frameborder="0"></iframe>
                     </div>
                 </div>
             </div>
@@ -251,7 +251,7 @@
                 class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
                 <div class="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800">
                     <div class="relative md:h-[720px] lg:h-[1440px] md:w-[1024px] lg:w-[2048px]">
-                        <iframe class="absolute laptop" src="https://ar-brown.net/andybrown.wtf/" frameborder="0" loading="lazy"></iframe>
+                        <iframe class="absolute laptop" data-src="https://ar-brown.net/andybrown.wtf/" frameborder="0"></iframe>
                     </div>
                 </div>
             </div>
@@ -406,3 +406,18 @@
         </div>
     </div>
 </div>
+<script>
+    // Defer iframes: the first loads after the window load event, the rest as they near the viewport.
+    window.addEventListener('load', function () {
+        var frames = document.querySelectorAll('iframe[data-src]');
+        var start = function (f) { f.src = f.dataset.src; };
+        var io = 'IntersectionObserver' in window ? new IntersectionObserver(function (entries) {
+            entries.forEach(function (e) {
+                if (e.isIntersecting) { start(e.target); io.unobserve(e.target); }
+            });
+        }, { rootMargin: '300px' }) : null;
+        frames.forEach(function (f) {
+            if (f.dataset.load === 'load' || !io) { start(f); } else { io.observe(f); }
+        });
+    });
+</script>
