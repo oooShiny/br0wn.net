@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/layout.css" type="text/css" rel="stylesheet">
-    <link href="css/styles.css" type="text/css" rel="stylesheet">
-     <script src="https://cdn.tailwindcss.com"></script>
     <title>Andrew Brown, Developer</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.gif">
-    <script defer data-site="br0wn.net" src="https://stats.br0wn.net/js/script.js"></script>
     <meta name="description" content="Website for Andrew Brown, website developer.">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.gif">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Anton&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="css/layout.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <script defer data-site="br0wn.net" src="https://stats.br0wn.net/js/script.js"></script>
     <script>
         !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug getPageViewId captureTraceFeedback captureTraceMetric".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
         posthog.init('phc_l3bl3UPs1L0uRwbIFkO7dh1VtZU1PjXMupXFRkiaNZn', {
@@ -18,299 +21,125 @@
     </script>
 </head>
 <body>
-<div>
-    <div class="wrapper">
-        <div class="header" style="background-color: rgb(234, 234, 234);">
-            <h1 class="desktop text-5xl">Andrew</h1>
-            <img src="images/ab-logo.png" alt="AB logo">
-            <h1 class="desktop text-5xl">Brown</h1>
-            <h1 class="mobile text-5xl">Andrew Brown</h1>
-        </div>
-        <div class="page-content">
-            
-
-<div class="row center">
-    <p>
-        I built this website, because that's what I do. I've spent my career 
-        combining my love of technology with helping people. That started off 
-        with jobs doing technical support work, and eventually I migrated into 
-        creating websites for people. And when I'm not creating websites for 
-        others I love to create them for myself.</p>
-    <p>
-        I mostly build websites in <a href="https://www.drupal.org/">Drupal</a> 
-        these days, but I like to dabble in new technologies, so you might see 
-        some other methods in the examples below.
-    </p>
-
-</div>
-<div class="row center grey">
-    <h2 class="pb-4 text-3xl">Websites I've Built</h2>
-    <p>
-        Specifically, I like to build sports websites. More specifically, I like
-        to build websites about the NFL and the New England Patriots. Here are 
-        some of my favorites and ones of which I'm most proud. If you want to 
-        see more code examples, you can check out my 
-        <a href="https://github.com/oooShiny/">Github</a>.
-    </p>
-</div>
-<div class="row bg-gray-500 text-white">
-    
-    <div class="my-4 grid grid-cols-1 md:grid-cols-2">
-        <div class="card-content">
-            <span class="card-title"><a href="https://patsdynasty.com/" target="_blank">Patriots Dynasty</a></span>
-            <p>
-                I came across an infographic that showed how the Patriots didn't have a losing record against any team in the NFL
-                since Bill Belichick became head coach of the team. I created a sortable, filterable version of that infographic
-                using the <a href="https://isotope.metafizzy.co/" target="_blank">Isotope JS library</a>. Since this was a living document now, I wanted to
-                replicate it in an updatable way, so I decided to create a site using <a href="https://getgrav.org" target="_blank">Grav</a> as the CMS.
-            </p>
-            <p>
-                This has since grown into a fully-featured Drupal 9 site that utilizes the Search API to connect to a separate
-                Solr server, the JSON API to export data, and a custom-built Tailwind theme. The site continues to grow, and a
-                podcast has spun out of this endeavor.
-            </p>
-
-        </div>
-        <div class="computer my-auto order-first md:order-none">
-            <div
-                class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
-                <div class="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800">
-                    <div class="relative md:h-[720px] lg:h-[1440px] md:w-[1024px] lg:w-[2048px]">
-                        <iframe data-load="load" class="absolute laptop" data-src="https://patsdynasty.com" frameborder="0"></iframe>
-                    </div>
-                </div>
-            </div>
-            <div
-                class="relative mx-auto bg-gray-900 dark:bg-gray-700 rounded-b-xl rounded-t-sm h-[17px] max-w-[351px] md:h-[21px] md:max-w-[597px]">
-                <div
-                    class="absolute left-1/2 top-0 -translate-x-1/2 rounded-b-xl w-[56px] h-[5px] md:w-[96px] md:h-[8px] bg-gray-800">
-                </div>
-            </div>
-            <div class="tags mx-auto py-4 w-fit">
-                <ul class="text-gray-700">
-                    <li class="tag-link"><a href="https://patsdynasty.com/" target="_blank">Website</a></li>
-                    <li class="tag-link"><a href="https://github.com/oooShiny/dynasty9" target="_blank">Github</a></li>
-                    <li>Drupal</li>
-                    <li>Tailwind</li>
-                    <li>Solr</li>
-                </ul>
-            </div>
-        </div>
+<a class="skip-link" href="#work">Skip to projects</a>
+<header class="masthead">
+    <div class="container masthead-inner">
+        <h1 class="wordart"><span>Andrew</span> <span>Brown</span></h1>
+        <p class="masthead-role">Web developer</p>
     </div>
+</header>
+<main>
+    <section class="section intro">
+        <div class="container prose">
+            <p class="lead">I built this website, because that's what I do. I've spent my career combining my love of technology with helping people. That started off with jobs doing technical support work, and eventually I migrated into creating websites for people. And when I'm not creating websites for others I love to create them for myself.</p>
+            <p>I mostly build websites in <a href="https://www.drupal.org/">Drupal</a> these days, but I like to dabble in new technologies, so you might see some other methods in the examples below.</p>
+        </div>
+    </section>
 
-    <div class="my-4 grid grid-cols-1 md:grid-cols-2">
-        <div class="computer my-auto order-first md:order-none">
-            <div
-                class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
-                <div class="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800">
-                    <div class="relative md:h-[720px] lg:h-[1440px] md:w-[1024px] lg:w-[2048px]">
-                        <iframe class="absolute laptop" data-src="https://tombradytds.com/" frameborder="0"></iframe>
-                    </div>
-                </div>
-            </div>
-            <div
-                class="relative mx-auto bg-gray-900 dark:bg-gray-700 rounded-b-xl rounded-t-sm h-[17px] max-w-[351px] md:h-[21px] md:max-w-[597px]">
-                <div
-                    class="absolute left-1/2 top-0 -translate-x-1/2 rounded-b-xl w-[56px] h-[5px] md:w-[96px] md:h-[8px] bg-gray-800">
-                </div>
-            </div>
-            <div class="tags mx-auto py-4 w-fit">
-                <ul class="text-gray-700">
-                    <li class="tag-link"><a href="https://tombradytds.com/" target="_blank">Website</a></li>
-                    <li class="tag-link"><a href="https://github.com/oooShiny/tombradytds" target="_blank">Github</a></li>
-                    <li>PHP</li>
-                    <li>Charting</li>
-                    <li>Javascript</li>
-                </ul>
-            </div>
+    <section class="section work" id="work">
+        <div class="container">
+            <h2 class="section-title">Websites I've Built</h2>
+            <p class="section-intro">Specifically, I like to build sports websites. More specifically, I like to build websites about the NFL and the New England Patriots. Here are some of my favorites and ones of which I'm most proud. If you want to see more code examples, you can check out my <a href="https://github.com/oooShiny/">Github</a>.</p>
         </div>
-        <div class="card-content">
-            <span class="card-title"><a href="https://tombradytds.com/" target="_blank">Tom Brady TDs</a></span>
-            <p>
-                I wanted to visualize all 700+ touchdowns that quarterback Tom Brady has thrown in his 20+ year career. I had all
-                of his Patriots TDs logged in my patsdynasty.com website, so I was able to export that data, but he has since moved
-                to another team. I created a second JSON file of Brady's TDs with his new team, and pulled the combined data into a
-                separate site that charts all of his TDs in a variety of different views.
-            </p>
+        <div class="container container-wide projects">
+    <article class="project">
+        <div class="project-text">
+            <h3 class="project-title"><a href="https://patsdynasty.com/" target="_blank" rel="noopener">Patriots Dynasty</a></h3>
+            <p>I came across an infographic that showed how the Patriots didn't have a losing record against any team in the NFL since Bill Belichick became head coach of the team. I created a sortable, filterable version of that infographic using the <a href="https://isotope.metafizzy.co/" target="_blank" rel="noopener">Isotope JS library</a>. Since this was a living document now, I wanted to replicate it in an updatable way, so I decided to create a site using <a href="https://getgrav.org" target="_blank" rel="noopener">Grav</a> as the CMS.</p>
+<p>This has since grown into a fully-featured Drupal 9 site that utilizes the Search API to connect to a separate Solr server, the JSON API to export data, and a custom-built Tailwind theme. The site continues to grow, and a podcast has spun out of this endeavor.</p>
+            <ul class="project-meta"><li><a class="tag-link" href="https://patsdynasty.com/" target="_blank" rel="noopener">Website</a></li><li><a class="tag-link" href="https://github.com/oooShiny/dynasty9" target="_blank" rel="noopener">Github</a></li><li class="tag">Drupal</li><li class="tag">Tailwind</li><li class="tag">Solr</li></ul>
         </div>
-    </div>
-    
-    <div class="my-4 grid grid-cols-1 md:grid-cols-2">
-        <div class="card-content">
-            <span class="card-title"><a href="http://infographic.qbtds.com/" target="_blank">QBTDs</a></span>
-            <p>
-                Inspired by the tombradytds.com site, I wanted to create an infographic of every receiver to whom Tom Brady had ever
-                thrown a TD pass. This led to the infographic builder, which takes specifically-named image files of each receiver
-                and sorts/resizes them by percentage of TDs caught. I used this to create the
-                <a href="https://twitter.com/PatsDynastyInfo/status/1620801935174688776" target="_blank">viral infographic</a> as well
-                as many other infographics for other QBs.
-            </p>
+        <div class="laptop">
+            <div class="laptop-lid"><div class="laptop-screen"><iframe data-load="load" data-src="https://patsdynasty.com" title="Patriots Dynasty preview" tabindex="-1" loading="lazy"></iframe></div></div>
+            <div class="laptop-base"></div>
         </div>
-        <div class="computer my-auto order-first md:order-none">
-            <div
-                class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
-                <div class="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800">
-                    <div class="relative md:h-[720px] lg:h-[1440px] md:w-[1024px] lg:w-[2048px]">
-                        <iframe class="absolute laptop" data-src="https://infographic.qbtds.com/tom-brady/" frameborder="0"></iframe>
-                    </div>
-                </div>
-            </div>
-            <div
-                class="relative mx-auto bg-gray-900 dark:bg-gray-700 rounded-b-xl rounded-t-sm h-[17px] max-w-[351px] md:h-[21px] md:max-w-[597px]">
-                <div
-                    class="absolute left-1/2 top-0 -translate-x-1/2 rounded-b-xl w-[56px] h-[5px] md:w-[96px] md:h-[8px] bg-gray-800">
-                </div>
-            </div>
-            <div class="tags mx-auto py-4 w-fit">
-                <ul class="text-gray-700">
-                    <li class="tag-link"><a href="http://infographic.qbtds.com/" target="_blank">Website</a></li>
-                    <li class="tag-link"><a href="https://github.com/oooShiny/qb-infographics" target="_blank">Github</a></li>
-                    <li>PHP</li>
-                    <li>Algorithms</li>
-                    <li>File Manipulation</li>
-                </ul>
-            </div>
+    </article>
+    <article class="project">
+        <div class="project-text">
+            <h3 class="project-title"><a href="https://tombradytds.com/" target="_blank" rel="noopener">Tom Brady TDs</a></h3>
+            <p>I wanted to visualize all 700+ touchdowns that quarterback Tom Brady has thrown in his 20+ year career. I had all of his Patriots TDs logged in my patsdynasty.com website, so I was able to export that data, but he has since moved to another team. I created a second JSON file of Brady's TDs with his new team, and pulled the combined data into a separate site that charts all of his TDs in a variety of different views.</p>
+            <ul class="project-meta"><li><a class="tag-link" href="https://tombradytds.com/" target="_blank" rel="noopener">Website</a></li><li><a class="tag-link" href="https://github.com/oooShiny/tombradytds" target="_blank" rel="noopener">Github</a></li><li class="tag">PHP</li><li class="tag">Charting</li><li class="tag">Javascript</li></ul>
         </div>
-    </div>
+        <div class="laptop">
+            <div class="laptop-lid"><div class="laptop-screen"><iframe data-src="https://tombradytds.com/" title="Tom Brady TDs preview" tabindex="-1" loading="lazy"></iframe></div></div>
+            <div class="laptop-base"></div>
+        </div>
+    </article>
+    <article class="project">
+        <div class="project-text">
+            <h3 class="project-title"><a href="http://infographic.qbtds.com/" target="_blank" rel="noopener">QBTDs</a></h3>
+            <p>Inspired by the tombradytds.com site, I wanted to create an infographic of every receiver to whom Tom Brady had ever thrown a TD pass. This led to the infographic builder, which takes specifically-named image files of each receiver and sorts/resizes them by percentage of TDs caught. I used this to create the <a href="https://twitter.com/PatsDynastyInfo/status/1620801935174688776" target="_blank" rel="noopener">viral infographic</a> as well as many other infographics for other QBs.</p>
+            <ul class="project-meta"><li><a class="tag-link" href="http://infographic.qbtds.com/" target="_blank" rel="noopener">Website</a></li><li><a class="tag-link" href="https://github.com/oooShiny/qb-infographics" target="_blank" rel="noopener">Github</a></li><li class="tag">PHP</li><li class="tag">Algorithms</li><li class="tag">File Manipulation</li></ul>
+        </div>
+        <div class="laptop">
+            <div class="laptop-lid"><div class="laptop-screen"><iframe data-src="https://infographic.qbtds.com/tom-brady/" title="QBTDs preview" tabindex="-1" loading="lazy"></iframe></div></div>
+            <div class="laptop-base"></div>
+        </div>
+    </article>
+    <article class="project">
+        <div class="project-text">
+            <h3 class="project-title"><a href="https://32-teams.com" target="_blank" rel="noopener">NFL News Generator</a></h3>
+            <p>I wanted to learn how to use the canvas in Javascript to build images, so I built a small website that allows users to fill in some form fields to create a realistic looking image similar to the ones that the NFL uses in their social media posts.</p>
+            <ul class="project-meta"><li><a class="tag-link" href="https://32-teams.com" target="_blank" rel="noopener">Website</a></li><li><a class="tag-link" href="https://github.com/oooShiny/nfl-news-generator" target="_blank" rel="noopener">Github</a></li><li class="tag">Javascript</li><li class="tag">Canvas</li><li class="tag">Dynamic Image Creation</li></ul>
+        </div>
+        <div class="laptop">
+            <div class="laptop-lid"><div class="laptop-screen"><iframe data-src="https://32-teams.com" title="NFL News Generator preview" tabindex="-1" loading="lazy"></iframe></div></div>
+            <div class="laptop-base"></div>
+        </div>
+    </article>
+    <article class="project">
+        <div class="project-text">
+            <h3 class="project-title"><a href="https://oooshiny.github.io/cityofchampions.boston/" target="_blank" rel="noopener">City of Champions</a></h3>
+            <p>After the Celtics won their latest banner I wanted to create an interactive list of all of the championship banners Boston sports teams had won in their history. This gave me the chance to try out using template tags in my HTML, and then using Javascript to build the banners dynamically based on a JSON list.</p>
+            <ul class="project-meta"><li><a class="tag-link" href="https://oooshiny.github.io/cityofchampions.boston/" target="_blank" rel="noopener">Website</a></li><li><a class="tag-link" href="https://github.com/oooShiny/cityofchampions.boston" target="_blank" rel="noopener">Github</a></li><li class="tag">Javascript</li><li class="tag">Templates</li></ul>
+        </div>
+        <div class="laptop">
+            <div class="laptop-lid"><div class="laptop-screen"><iframe data-src="https://oooshiny.github.io/cityofchampions.boston/" title="City of Champions preview" tabindex="-1" loading="lazy"></iframe></div></div>
+            <div class="laptop-base"></div>
+        </div>
+    </article>
+    <article class="project">
+        <div class="project-text">
+            <h3 class="project-title"><a href="https://ar-brown.net/andybrown.wtf/" target="_blank" rel="noopener">Andy Brown Signs</a></h3>
+            <p>During election season I got it in my head to make my own non-election signs and put them up amongst the dozens of other signs at the top of my street. It got a surprising amount of attention, so I threw together a quick website to answer people's questions about it.</p>
+            <ul class="project-meta"><li><a class="tag-link" href="https://ar-brown.net/andybrown.wtf/" target="_blank" rel="noopener">Website</a></li></ul>
+        </div>
+        <div class="laptop">
+            <div class="laptop-lid"><div class="laptop-screen"><iframe data-src="https://ar-brown.net/andybrown.wtf/" title="Andy Brown Signs preview" tabindex="-1" loading="lazy"></iframe></div></div>
+            <div class="laptop-base"></div>
+        </div>
+    </article>
+        </div>
+    </section>
 
-    <div class="my-4 grid grid-cols-1 md:grid-cols-2">
-        <div class="computer my-auto order-first md:order-none">
-            <div
-                class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
-                <div class="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800">
-                    <div class="relative md:h-[720px] lg:h-[1440px] md:w-[1024px] lg:w-[2048px]">
-                        <iframe class="absolute laptop" data-src="https://32-teams.com" frameborder="0"></iframe>
-                    </div>
-                </div>
-            </div>
-            <div
-                class="relative mx-auto bg-gray-900 dark:bg-gray-700 rounded-b-xl rounded-t-sm h-[17px] max-w-[351px] md:h-[21px] md:max-w-[597px]">
-                <div
-                    class="absolute left-1/2 top-0 -translate-x-1/2 rounded-b-xl w-[56px] h-[5px] md:w-[96px] md:h-[8px] bg-gray-800">
-                </div>
-            </div>
-            <div class="tags mx-auto py-4 w-fit">
-                <ul class="text-gray-700">
-                    <li class="tag-link"><a href="https://32-teams.com" target="_blank">Website</a></li>
-                    <li class="tag-link"><a href="https://github.com/oooShiny/nfl-news-generator" target="_blank">Github</a></li>
-                    <li>Javascript</li>
-                    <li>Canvas</li>
-                    <li>Dynamic Image Creation</li>
-                </ul>
-            </div>
-        </div>
-        <div class="card-content">
-            <span class="card-title"><a href="https://32-teams.com" target="_blank">NFL News Generator</a></span>
-            <p>
-                I wanted to learn how to use the canvas in Javascript to build images, so I built a small website that allows users to
-                fill in some form fields to create a realistic looking image similar to the ones that the NFL uses in their social
-                media posts.
-            </p>
-
-        </div>
-    </div>
-
-    <div class="my-4 grid grid-cols-1 md:grid-cols-2">
-        <div class="card-content">
-            <span class="card-title"><a href="https://oooshiny.github.io/cityofchampions.boston/" target="_blank">City of Champions</a></span>
-            <p>
-                After the Celtics won their latest banner I wanted to create an interactive list of all of the championship
-                banners Boston sports teams had won in their history. This gave me the chance to try out using template tags in 
-                my HTML, and then using Javascript to build the banners dynamically based on a JSON list. 
-            </p>
-        </div>
-        <div class="computer my-auto order-first md:order-none">
-            <div
-                class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
-                <div class="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800">
-                    <div class="relative md:h-[720px] lg:h-[1440px] md:w-[1024px] lg:w-[2048px]">
-                        <iframe class="absolute laptop" data-src="https://oooshiny.github.io/cityofchampions.boston/" frameborder="0"></iframe>
-                    </div>
-                </div>
-            </div>
-            <div
-                class="relative mx-auto bg-gray-900 dark:bg-gray-700 rounded-b-xl rounded-t-sm h-[17px] max-w-[351px] md:h-[21px] md:max-w-[597px]">
-                <div
-                    class="absolute left-1/2 top-0 -translate-x-1/2 rounded-b-xl w-[56px] h-[5px] md:w-[96px] md:h-[8px] bg-gray-800">
-                </div>
-            </div>
-            <div class="tags mx-auto py-4 w-fit">
-                <ul class="text-gray-700">
-                    <li class="tag-link"><a href="https://oooshiny.github.io/cityofchampions.boston/" target="_blank">Website</a></li>
-                    <li class="tag-link"><a href="https://github.com/oooShiny/cityofchampions.boston" target="_blank">Github</a></li>
-                    <li>Javascript</li>
-                    <li>Templates</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <div class="my-4 grid grid-cols-1 md:grid-cols-2">
-        <div class="computer my-auto order-first md:order-none">
-            <div
-                class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
-                <div class="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800">
-                    <div class="relative md:h-[720px] lg:h-[1440px] md:w-[1024px] lg:w-[2048px]">
-                        <iframe class="absolute laptop" data-src="https://ar-brown.net/andybrown.wtf/" frameborder="0"></iframe>
-                    </div>
-                </div>
-            </div>
-            <div
-                class="relative mx-auto bg-gray-900 dark:bg-gray-700 rounded-b-xl rounded-t-sm h-[17px] max-w-[351px] md:h-[21px] md:max-w-[597px]">
-                <div
-                    class="absolute left-1/2 top-0 -translate-x-1/2 rounded-b-xl w-[56px] h-[5px] md:w-[96px] md:h-[8px] bg-gray-800">
-                </div>
-            </div>
-            <div class="tags mx-auto py-4 w-fit">
-                <ul class="text-gray-700">
-                    <li class="tag-link"><a href="https://ar-brown.net/andybrown.wtf/" target="_blank">Website</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="card-content">
-            <span class="card-title"><a href="https://ar-brown.net/andybrown.wtf/" target="_blank">Andy Brown Signs</a></span>
-            <p>
-                During election season I got it in my head to make my own non-election signs and put them up amongst 
-                 the dozens of other signs at the top of my street. It got a surprising amount of attention, so I 
-                 threw together a quick website to answer people's questions about it. 
-            </p>
-
-        </div>
-    </div>
-
-</div>
-<div class="row center">
-    <h2 class="text-2xl">Resume</h2>
-    <p>And here are some places I've worked, most of which have let me build websites (since that's what I do).</p>
-    <div class="wrapper">
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Resume</h2>
+            <p class="section-intro">And here are some places I've worked, most of which have let me build websites (since that's what I do).</p>
+            <div class="accordion">
         <div class="tab">
             <input id="tab-Mindgrub" type="checkbox">
             <label for="tab-Mindgrub">Mindgrub</label>
-            <div class="tab-content">
-                <p>
+            <div class="tab-content"><div class="tab-inner"><p>
                     My current employer. I'm working on new builds and site migrations of Drupal sites at the moment.
-                </p>
-            </div>
+                </p></div></div>
         </div>
         <div class="tab">
             <input id="tab-Pegasystems" type="checkbox">
             <label for="tab-Pegasystems">Pegasystems</label>
-            <div class="tab-content">
-                <p>
+            <div class="tab-content"><div class="tab-inner"><p>
                     I was generally responsible for working on the Pegasystems family of websites. I started on the Community website, and ended up as the
                     deployment manager while also mentoring multiple new developers on the team.
                 </p>
                 <p>
                     I was then rotated onto the internal company Portal website, where I worked with stakeholders to simplify author workflows and personalize
                     content based on user locations and roles.
-                </p>
-            </div>
+                </p></div></div>
         </div>
         <div class="tab">
             <input id="tab-Genuine" type="checkbox">
             <label for="tab-Genuine">Genuine</label>
-            <div class="tab-content">
-                <p>
+            <div class="tab-content"><div class="tab-inner"><p>
                     I started at Genuine Interactive as a Junior Web Application Developer on the PHP team. In that role, I worked mainly on Drupal maintenance projects for a lot of Boston-based and international companies.
                 </p>
                 <p>
@@ -321,26 +150,22 @@
                 </p>
                 <p>
                     Eventually I was given my own projects to run, in which I learned how to estimate and architect a full website project from the ground up.
-                </p>
-            </div>
+                </p></div></div>
         </div>
         <div class="tab">
             <input id="tab-Planet" type="checkbox">
             <label for="tab-Planet">Planet Fitness</label>
-            <div class="tab-content">
-                <p>
+            <div class="tab-content"><div class="tab-inner"><p>
                     While at Planet Fitness I provided technical support for corporate employees, including both hardware and software support. I worked with suppliers to purchase new equipment and software licenses as needed. When needed, I also managed outside vendors on projects including the conversion of the company website from Coldfusion to Drupal.
                 </p>
                 <p>
                     I started as a mid-level technical support specialist, and within about 6 months I was running the support department, with three employees reporting directly to me.
-                </p>
-            </div>
+                </p></div></div>
         </div>
         <div class="tab">
             <input id="tab-AdminInternet" type="checkbox">
             <label for="tab-AdminInternet">AdminInternet</label>
-            <div class="tab-content">
-                <p>
+            <div class="tab-content"><div class="tab-inner"><p>
                     At AdminInternet I wore many hats. As a developer/site builder I designed, deployed, and maintained websites using the Drupal framework, which was supplemented with PHP/MySQL custom code when necessary. These sites used a mix of Drupal 6 or Drupal 7 based on user needs, and I utilized drush when needed.
                 </p>
                 <p>
@@ -351,62 +176,83 @@
                 </p>
                 <p>
                     I created a system from scratch using Drupal 7 that streamlined the old billing system. Because time tracking was simplified, work was tracked more efficiently and required less editing when the invoices were created. Instead of a process that originally took up to 6 hours, my new system condensed the entire process to under 30 minutes. This increased the frequency of billing from once ever 4 months to once a week, stabilizing the cashflow process.
-                </p>
-            </div>
+                </p></div></div>
         </div>
         <div class="tab">
             <input id="tab-John" type="checkbox">
             <label for="tab-John">John Mason Institute</label>
-            <div class="tab-content">
-                <p>
+            <div class="tab-content"><div class="tab-inner"><p>
                     I worked part-time at John Mason Institute where I taught classes in entry-level web development as well as classes for the Adobe Suite (Photoshop, Illustrator, Dreamweaver, etc.) to individuals looking for certifications.
                 </p>
                 <p>
                     JMI works with the unemployment office to provide job-seekers with skills they can use to get themselves a job, so I was able to share my passion for technology with a wide variety of people from all walks of life.
-                </p>
-            </div>
+                </p></div></div>
         </div>
         <div class="tab">
             <input id="tab-H" type="checkbox">
             <label for="tab-H">H&amp;R Block</label>
-            <div class="tab-content">
-                <p>
+            <div class="tab-content"><div class="tab-inner"><p>
                     I worked seasonally at H&amp;R Block, where I provided on-site technical support for 20+ offices in NH and MA, including hardware, software and network support. My job was to keep the offices running smoothly for the tax professionals. Duties included setting up the offices at the beginning of the season (workstations, office networks, etc), providing on-location support to the offices once the season began, and then helping dismantle the office infrastructure once the season was over (after April 15th, as we all know!).
-                </p>
-            </div>
+                </p></div></div>
         </div>
         <div class="tab">
             <input id="tab-University" type="checkbox">
             <label for="tab-University">University of New Hampshire</label>
-            <div class="tab-content">
-                <p>
+            <div class="tab-content"><div class="tab-inner"><p>
                     While attending UNH (see the Education section), I worked in the campus computer clusters as a Computer Consultant. I provided guidance and assistance to students, faculty and staff for various computer-related issues (mainly involving printers!).
-                </p>
+                </p></div></div>
+        </div>
             </div>
         </div>
-    </div>
-</div>
-<div class="row center grey">
-    <h2 class="text-2xl">Send Me a Message</h2>
-    <p>Want to talk about websites? Send me a message.</p>
-</div>
-<div class="row grey">
-    <form action="https://formspree.io/andrew@br0wn.net" method="POST">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="Your name">
-        <label for="message">Message</label>
-        <textarea id="message" name="message" placeholder="Write something.."></textarea>
-        <input type="submit" value="Submit">
-    </form>
-</div>
+    </section>
 
+    <section class="section contact">
+        <div class="container container-narrow">
+            <h2 class="section-title">Send Me a Message</h2>
+            <p class="section-intro">Want to talk about websites? Send me a message.</p>
+            <form action="https://formspree.io/andrew@br0wn.net" method="POST">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" autocomplete="name">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Write something.."></textarea>
+                <input type="submit" value="Send message">
+            </form>
         </div>
-        <div class="footer">
-            © 2018 Andrew Brown
-        </div>
-    </div>
-</div>
+    </section>
+</main>
+<footer class="footer">
+    <div class="container">&copy; <span id="year">2025</span> Andrew Brown</div>
+</footer>
 <script>
+    // Size each name line so both span the full header width.
+    var fitLines = function () {
+        var h1 = document.querySelector('.wordart');
+        var w = h1.clientWidth;
+        h1.querySelectorAll('span').forEach(function (s) {
+            s.style.fontSize = '100px';
+            s.style.fontSize = (100 * w / s.getBoundingClientRect().width) + 'px';
+        });
+    };
+    fitLines();
+    window.addEventListener('resize', fitLines);
+    if (document.fonts && document.fonts.ready) { document.fonts.ready.then(fitLines); }
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Scale each 1280px-wide iframe to fit its laptop screen.
+    var DESKTOP_W = 1280;
+    var screens = document.querySelectorAll('.laptop-screen');
+    var fit = function (screen) {
+        var f = screen.querySelector('iframe');
+        f.style.transform = 'scale(' + (screen.clientWidth / DESKTOP_W) + ')';
+    };
+    if ('ResizeObserver' in window) {
+        var ro = new ResizeObserver(function (entries) { entries.forEach(function (e) { fit(e.target); }); });
+        screens.forEach(function (s) { ro.observe(s); });
+    } else {
+        screens.forEach(fit);
+    }
+
     // Defer iframes: the first loads after the window load event, the rest as they near the viewport.
     window.addEventListener('load', function () {
         var frames = document.querySelectorAll('iframe[data-src]');
@@ -421,3 +267,5 @@
         });
     });
 </script>
+</body>
+</html>

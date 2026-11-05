@@ -1,95 +1,65 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
 body {
     margin: 0;
 }
-.wrapper {
-    display: grid;
-    grid-gap: 1em;
+img, iframe {
+    max-width: 100%;
+}
+[hidden] {
+    display: none !important;
 }
 
-.page-header {
-    display: grid;
-    justify-items: center;
+.container {
+    width: min(100% - 48px, 720px);
+    margin-inline: auto;
+}
+.container-wide {
+    width: min(100% - 48px, 1080px);
+}
+.container-narrow {
+    width: min(100% - 48px, 560px);
 }
 
-.header {
-    display: flex;
-}
-.header img {
-    height: 160px;
-    width: 160px;
+.section {
+    padding-block: 80px;
 }
 
-@media only screen and (min-width: 768px) {
-    .header {
-        height: 10em;
-        justify-content: center;
-    }
-    .header h1.desktop {
-        padding-top: 1em;
-        font-weight: 100;
-    }
-
-    .header h1.mobile {
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 767px) {
-    .header {
-        flex-direction: column;
-    }
-    .header h1.desktop {
-        display: none;
-    }
-
-    .header h1.mobile {
-        font-weight: 100;
-        text-align: center;
-    }
-    .header img {
-        margin: 0 auto;
-    }
-}
-
-.navigation {
-    padding: 1em 5%;
+.masthead-inner {
     display: grid;
     justify-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 }
 
-.row, .footer {
+.project {
     display: grid;
-    padding: 2em 5%;
-
+    grid-template-columns: 1fr;
+    gap: 32px;
+    align-items: center;
+    padding-block: 64px;
 }
-.center {
-    justify-items: center;
-}
-
-.full-width {
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
+.project .laptop {
+    order: -1;
 }
 
-/**
- Card Layout
- **/
-.row-cards {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
+@media (min-width: 900px) {
+    .project {
+        grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+        gap: 64px;
+    }
+    .project .laptop {
+        order: 0;
+    }
+    .project:nth-child(even) .laptop {
+        order: -1;
+    }
 }
 
-.card {
-    max-width: 300px;
-    margin: 2em 0;
-}
-.card-wide {
-    max-width: 80%;
-    margin-bottom: 2em;
+@media (max-width: 599px) {
+    .section {
+        padding-block: 56px;
+    }
+    .project {
+        padding-block: 40px;
+    }
 }
