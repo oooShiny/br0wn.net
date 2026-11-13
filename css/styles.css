@@ -1,15 +1,15 @@
 :root {
-    --bg: #ffffff;
+    --bg: #eaeaea;
     --surface: #f5f6f7;
-    --ink: #16181d;
+    --ink: #282c34;
     --muted: #565b66;
     --rule: #d5d8dd;
-    --navy: #0b1f3a;
-    --navy-soft: #c9d3e3;
-    --navy-rule: #25395a;
-    --accent: #c8102e;
-    --accent-ink: #ffffff;
-    --accent-hover: #9d0c24;
+    --gray: #282c34;
+    --gray-soft: #c9d3e3;
+    --gray-rule: #25395a;
+    --accent: #8abeb7;
+    --accent-ink: #eaeaea;
+    --accent-hover: #0475b6;
 
     --font-display: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
     --font-block: "Anton", Impact, "Arial Narrow Bold", sans-serif;
@@ -52,11 +52,11 @@ p {
 }
 
 a {
-    color: var(--accent);
+    color: var(--ink);
     text-decoration-line: underline;
     text-decoration-thickness: 1px;
     text-underline-offset: 0.2em;
-    text-decoration-color: color-mix(in srgb, var(--accent) 40%, transparent);
+    text-decoration-color: color-mix(in srgb, var(--ink) 40%, transparent);
     transition: text-decoration-color var(--dur) var(--ease), color var(--dur) var(--ease);
 }
 a:hover {
@@ -86,47 +86,19 @@ a:hover {
 .masthead {
     padding: 0;
     overflow: hidden;
-    background: var(--navy);
-    color: #fff;
+    background: #282c34;
+    color: #8abeb7;
     border-bottom: 8px solid var(--accent);
 }
 .masthead .container {
     width: 100%;
 }
-.masthead-inner {
-    justify-items: start;
-}
-.masthead h1.wordart {
-    width: 100%;
-    font-family: var(--font-block);
-    margin: 0;
-    font-size: 22vw;
-    font-weight: 400;
-    line-height: 0.86;
-    letter-spacing: 0.01em;
-    text-transform: uppercase;
-    color: #fff;
-}
-.wordart span {
-    display: block;
-    width: max-content;
-    white-space: nowrap;
-}
-.wordart span + span {
-    font-size: 1.2em;
-}
-@supports ((-webkit-background-clip: text) or (background-clip: text)) {
-    .wordart span {
-        background-image: linear-gradient(165deg, #ffffff 15%, #ff8a9b 55%, #e0183a 100%);
-        background-size: 100% 100%;
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        color: transparent;
-    }
-    .wordart span + span {
-        background-image: linear-gradient(165deg, #ffb3be 0%, #ff4d68 50%, #c8102e 100%);
-    }
+
+.masthead pre {
+    font-family: var(--font-display);
+    margin: 0 auto;
+    font-size: 5em;
+    text-fit: shrink;
 }
 .masthead-role {
     margin: 0;
@@ -135,28 +107,7 @@ a:hover {
     font-weight: 600;
     letter-spacing: 0.18em;
     text-transform: uppercase;
-    color: var(--navy-soft);
-}
-
-.scene {
-    display: none;
-    width: 100%;
-}
-.masthead.has-scene .scene {
-    display: block;
-}
-/* The scene draws the name; keep the heading as real text for screen readers and search. */
-.masthead.has-scene h1.wordart {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    white-space: nowrap;
-    border: 0;
-    font-size: 1rem;
+    color: var(--gray-soft);
 }
 
 /* Intro */
@@ -194,13 +145,13 @@ a:hover {
 
 /* Work */
 .work {
-    background: var(--navy);
+    background: var(--gray);
     color: #fff;
     counter-reset: project;
 }
 .work .section-intro,
 .work .project-text p {
-    color: var(--navy-soft);
+    color: var(--gray-soft);
 }
 .work a {
     color: #fff;
@@ -212,13 +163,73 @@ a:hover {
     text-decoration-color: #fff;
 }
 .projects {
-    margin-top: var(--space-6);
+    counter-reset: project;
+}
+
+/* Work tabs */
+.work-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-1);
+    margin-bottom: var(--space-4);
+    padding-bottom: var(--space-3);
+    border-bottom: 1px solid var(--accent);
+}
+.work-tab {
+    padding: 10px 24px;
+    font-family: var(--font-display);
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: var(--gray-soft);
+    background: transparent;
+    border: 1px solid var(--gray-rule);
+    border-radius: 999px;
+    cursor: pointer;
+    transition: background-color var(--dur) var(--ease), color var(--dur) var(--ease), border-color var(--dur) var(--ease);
+}
+.work-tab:hover {
+    color: #fff;
+    border-color: var(--accent);
+}
+.work-tab[aria-selected="true"] {
+    color: var(--gray);
+    background: var(--accent);
+    border-color: var(--accent);
+}
+.work-panel:focus-visible {
+    outline-offset: -2px;
+}
+.empty-state {
+    padding-block: var(--space-6);
+    font-family: var(--font-display);
+    color: var(--gray-soft);
+    text-align: center;
+}
+
+/* Photo (for non-web projects, in place of the laptop) */
+.photo {
+    width: 100%;
+    max-width: 560px;
+    margin: 0 auto;
+}
+.photo img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 24px 32px rgba(0, 0, 0, 0.45);
+}
+.photo figcaption {
+    margin-top: var(--space-1);
+    font-size: 0.875rem;
+    color: var(--gray-soft);
 }
 .project {
     counter-increment: project;
 }
 .project + .project {
-    border-top: 1px solid var(--navy-rule);
+    border-top: 1px solid var(--gray-rule);
 }
 .project-text::before {
     content: counter(project, decimal-leading-zero);
@@ -226,7 +237,7 @@ a:hover {
     margin-bottom: var(--space-1);
     font-family: var(--font-display);
     font-size: 1.5rem;
-    color: #ff5a73;
+    color: var(--accent);
 }
 .project-title {
     font-size: clamp(2.125rem, 4vw, 3rem);
@@ -261,23 +272,23 @@ a:hover {
     display: inline-block;
     padding: 8px 16px;
     font-weight: 600;
-    color: var(--accent-ink);
+    color: var(--gray);
     background: var(--accent);
     border-radius: 999px;
     text-decoration: none;
     transition: background-color var(--dur) var(--ease);
 }
 .work a.tag-link:hover {
-    background: #e0183a;
+    background: var(--accent-hover);
 }
 .tag-link::after {
     content: " \2197";
 }
 .tag {
     padding: 7px 14px;
-    border: 1px solid var(--navy-rule);
+    border: 1px solid var(--gray-rule);
     border-radius: 999px;
-    color: var(--navy-soft);
+    color: var(--gray-soft);
 }
 
 /* Laptop */
@@ -455,8 +466,8 @@ input[type=submit]:hover {
     padding-block: var(--space-6);
     text-align: center;
     font-size: 0.875rem;
-    color: var(--navy-soft);
-    background: var(--navy);
+    color: var(--gray-soft);
+    background: var(--gray);
 }
 
 @media (prefers-reduced-motion: reduce) {
